@@ -1,0 +1,46 @@
+flowchart TD
+    %% PENYEBAB UTAMA (AKAR MASALAH)
+    P1[Kelemahan otot dinding perut] --> T{TEKANAN DALAM<br>PERUT MENINGKAT}
+    P2[Kebiasaan mengejan:<br>Batuk kronis, BAB keras,<br>angkat berat, obesitas] --> T
+    
+    %% PROSES TERJADI HERNIA
+    T --> Proses[Usus/lemak terdorong<br>keluar melalui pusar]
+    Proses --> Gejala[Benjolan di pusar<br>hilang timbul]
+    
+    %% PERJALANAN PENYAKIT (2 KEMUNGKINAN)
+    Gejala --> Ringan[Tetap ringan:<br>Benjolan bisa masuk kembali]
+    Gejala --> Berat[Memburuk:<br>Benjolan makin besar dan terjepit]
+    
+    %% KOMPLIKASI BERTINGKAT (SEBAB-AKIBAT)
+    Berat --> J1[Hernia tidak bisa masuk]
+    J1 --> J2[Pembuluh darah tertekan]
+    J2 --> J3[Jaringan kekurangan oksigen]
+    J3 --> J4[Jaringan mulai mati]
+    J4 --> J5[Jaringan mati total]
+    J5 --> J6[Usus pecah]
+    J6 --> J7[Infeksi ke seluruh rongga perut]
+    
+    %% DAMPAK LANGSUNG PADA PASIEN
+    J2 --> D1[Nyeri akut]
+    J3 --> D2[Demam]
+    J5 --> D3[Nyeri hebat]
+    J6 --> D4[Perut tegang]
+    J7 --> D5[Syok, tekanan darah turun]
+    
+    %% DAMPAK PSIKOLOGIS & LAINNYA
+    Berat --> D6[Cemas menghadapi operasi]
+    Berat --> D7[Takut karena kurang pengetahuan]
+    J1 --> D8[Mual, muntah, tidak bisa BAB]
+    
+    %% DIAGNOSA KEPERAWATAN (HASIL AKHIR)
+    D1 --> N1[Dx: Nyeri Akut]
+    D2 --> N2[Dx: Hipertermia]
+    D3 --> N1
+    D4 --> N3[Dx: Risiko Infeksi]
+    D5 --> N4[Dx: Risiko Syok]
+    D6 --> N5[Dx: Ansietas]
+    D7 --> N6[Dx: Defisit Pengetahuan]
+    D8 --> N7[Dx: Konstipasi]
+    
+    %% DAMPAK MOBILITAS
+    D1 --> N8[Dx: Gangguan Mobilitas Fisik]
